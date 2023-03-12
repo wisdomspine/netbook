@@ -1,0 +1,26 @@
+<div class="container">
+  <!-- logo and nav links -->
+  <div class="logo-plus-navigation">
+    <a routerLink="/">
+      <img src="/assets/images/logo.svg" alt="" />
+    </a>
+
+    <!-- nav-links -->
+    <ul>
+      <li *ngFor="let link of links">
+        <a [routerLink]="[link.url]" [fragment]="link.fragment">
+          {{ link.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- cta and search -->
+  <div>
+    <ntb-search-input>
+      <input type="search" />
+    </ntb-search-input>
+
+    <button type="button">Log in</button>
+  </div>
+</div>

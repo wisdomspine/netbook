@@ -1,0 +1,11 @@
+$constants: (
+  primary-color: #217bf4,
+  container-width: 1170px,
+  hero-gradient: linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%),
+);
+
+:root {
+  @each $key, $value in $constants {
+    --#{$key}: #{$value};
+  }
+}

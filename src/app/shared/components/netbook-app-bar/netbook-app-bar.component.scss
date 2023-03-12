@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  .container {
+    width: min(100%, var(--container-width));
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-plus-navigation {
+      display: flex;
+      align-items: center;
+
+      a {
+        img {
+          height: 34px;
+          width: auto;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;
+        padding-left: 0px;
+        margin-left: 72px;
+        > li {
+          &:not(:first-of-type) {
+            margin-left: 32px;
+          }
+        }
+      }
+    }
+  }
+}
